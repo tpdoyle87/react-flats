@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-
-const GOOGLE_API_KEY = "AIzaSyCrCijfhqhwAd8G-izYH1uWVP2KMy4tS5I"
+import GOOGLE_API_KEY from '../data/ENV'
 
 
 const AnyReactComponent = ({ text }) => <div className="marker"><div className="dot"></div><div className="pulse"></div></div>;
 class Map extends Component {
 
   render() {
+    console.log(GOOGLE_API_KEY)
     return (
       // Important! Always set the container height explicitly
       <div className="map-container">
