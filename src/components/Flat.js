@@ -17,7 +17,9 @@ class Flat extends React.Component {
     >
       <div className="card-category">{this.props.flat.price} {this.props.flat.priceCurrency}</div>
       <div className="card-description">
-        <h2>{this.props.flat.description}</h2>
+        <h2>{this.props.flat.name}</h2>
+        <a href={this.props.flat.imageUrl} style={{color: 'white'}}>Click Here Deb!!</a>
+
       </div>
     </div>
     )
