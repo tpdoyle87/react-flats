@@ -7,7 +7,6 @@ const AnyReactComponent = ({ text }) => <div className="marker"><div className="
 class Map extends Component {
 
   render() {
-    console.log(GOOGLE_API_KEY)
     return (
       // Important! Always set the container height explicitly
       <div className="map-container">
